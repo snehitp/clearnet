@@ -1,0 +1,12 @@
+id: CaseDataForVariant
+title: All clinical info about variant
+description: Return case information matching a specific variant
+version: 0.1
+parameters:
+  variant:
+    type: string
+    description: Chromosome of the interested variant
+form:
+  variant:
+    title: HGVS Genomic Variant
+    control: textbox

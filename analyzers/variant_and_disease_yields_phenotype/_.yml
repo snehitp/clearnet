@@ -1,0 +1,21 @@
+id: variant_and_disease_yields_phenotype
+title: For (variant, disease) tuple, what phenotypes have been observed?
+description: Given a variant and a disease, return a listing of phenotypes, each with a count
+version: 0.1
+definitions:
+  Query:
+    type: object
+    properties:
+      variant:
+        type: string
+        description: Variant, in HGVS format
+      disease:
+        type: string
+        description: Disease, in MonDO format
+form:
+  variant:
+    title: HGVS Genomic Variant
+    control: textbox
+  disease:
+    title: MonDO Disease
+    control: textbox

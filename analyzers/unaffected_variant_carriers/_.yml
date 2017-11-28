@@ -1,0 +1,21 @@
+id: unaffected_variant_carriers
+title: How many variant carriers are unaffected?
+description: For this variant and this disease, how many variant carriers are unaffected (family member or not, include diseases the carriers DO have)?
+version: 0.1
+definitions:
+  Query:
+    type: object
+    properties:
+      variant:
+        type: string
+        description: Variant, in HGVS format
+      disease:
+        type: string
+        description: Disease, in MonDO format
+form:
+  variant:
+    title: HGVS Genomic Variant
+    control: textbox
+  disease:
+    title: MonDO Disease
+    control: textbox

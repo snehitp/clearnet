@@ -1,0 +1,15 @@
+id: 0d0082fda590492a80ac8702b2b0e2d6
+title: Has variant been observed?
+description: Has this variant been seen in a case?
+version: 0.1
+definitions:
+  Query:
+    type: object
+    properties:
+      variant:
+        type: string
+        description: Chromosome of the interested variant
+form:
+  variant:
+    title: HGVS Genomic Variant
+    control: textbox

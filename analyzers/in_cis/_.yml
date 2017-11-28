@@ -1,0 +1,15 @@
+id: InCis
+title: Is variant in cis with another?
+description: Whether the [variant] is [in-cis] with another [pathogenic] variant?
+version: 0.1
+definitions:
+  Query:
+    type: object
+    properties:
+      variant:
+        type: string
+        description: Chromosome of the interested variant
+form:
+  variant:
+    title: HGVS Genomic Variant
+    control: textbox

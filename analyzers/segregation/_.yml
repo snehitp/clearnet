@@ -1,0 +1,21 @@
+id: segregation
+title: How many segregations were observed?
+description: Given a (variant, disease) tuple, how many associated (parent, child) tuples exist?
+version: 0.1
+definitions:
+  Query:
+    type: object
+    properties:
+      variant:
+        type: string
+        description: Variant, in HGVS format
+      disease:
+        type: string
+        description: Disease, in MonDO format
+form:
+  variant:
+    title: HGVS Genomic Variant
+    control: textbox
+  disease:
+    title: MonDO Disease
+    control: textbox

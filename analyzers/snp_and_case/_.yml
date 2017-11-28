@@ -1,0 +1,36 @@
+id: SnpAndCase
+title: Phenotypes reported with variant carriers?
+description: What is the phenotype of all cases that have the variant of interest?
+version: 0.1
+definitions:
+  Query:
+    type: object
+    properties:
+      variant:
+        type: string
+        description: Chromosome of the interested variant
+      population:
+        type: array
+        items:
+          type: string
+        description: Array of population identifiers
+      clinicalIndications:
+        type: array
+        items:
+          type: string
+        description: Array of clinical indications example (ICD10:code)
+      familyHistory:
+        type: string
+        description: Family history on the maternal, paternal, or both sides
+form:
+  variant:
+    title: HGVS Genomic Variant
+    control: textbox
+  disease:
+    title: MonDO Disease
+    control: textbox
+  clinicalIndications:
+    title: Clincal Indications
+    controle: textbox
+  familyHistory:
+    title: Family history on maternal paternal or both sides

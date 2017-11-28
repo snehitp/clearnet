@@ -1,0 +1,15 @@
+id: Denovo
+title: Variant has been observed de novo?
+description: Has this ever been seen as a denovo in any case?
+version: 0.1
+definitions:
+  Query:
+    type: object
+    properties:
+      variant:
+        type: string
+        description: Chromosome of the interested variant
+form:
+  variant:
+    title: HGVS Genomic Variant
+    control: textbox
